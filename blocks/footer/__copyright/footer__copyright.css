@@ -1,0 +1,7 @@
+@media (max-width: 880px) {
+	.footer__copyright {
+    padding-left: 19px;
+    padding-right: 10px;
+    line-height: 1.5;
+  }
+} 
