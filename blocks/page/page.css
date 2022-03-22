@@ -1,14 +1,14 @@
 .page {
-	min-width: 320px;
-  margin: 0 auto;
-  max-width: 880px;
+	display: flex;
+	flex-direction: column;
 	background: #000;
 	color: #fff;
+	margin: 0 45px;
 	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
 }
 
-/* @media (max-width: 400px) {
-	.page  {
-		
+@media (max-width: 400px) {
+	.page {
+		margin: 0 auto;
 	}
-} */
+}

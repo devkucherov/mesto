@@ -7,25 +7,40 @@
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body class="page">
+
   <!-- .header -->
-  <header class="header">
-    <img src="./images/logo.svg" alt="Логотип" class="header__logo">
+  <header class="header page__header">
+    <img src="./images/logo.svg" alt="Логотип" class="logo header__logo">
   </header>
   <!-- /.header -->
 
-  <!-- .main -->
-  <main class="main">
-    <section class="profile">
-      
-    </section>
-    <!-- /.profile -->
-  </main>
-  <!-- /.main -->
+  <!-- .profile -->
+  <section class="profile page__profile">
+
+    <img src="./images/avatar.jpg" alt="Фото профеля" class="profile__avatar">
+
+		<h1 class="profile__user-name">Жак-Ив Кусто</h1>
+
+		<p class="profile__user-job">Исследователь океана</p>
+
+		<button type="button" class="edit-button profile__edit-button">
+			<img src="./images/icon-edit.svg" alt="Редактировать профиль" class="edit-button__icon">
+		</button>
+
+	  <button type="button" class="add-button profile__add-button">
+		  <img src="./images/icon-add.svg" alt="Добавить" class="add-button__icon">
+	  </button>
+
+  </section>
+  <!-- /.profile -->
+
+ 
 
   <!-- .footer -->
-  <footer class="footer">
-    <p class="footer__copyright">Сделал Паша Кучеров<br> &copy;2022 Mesto Russia</p>
+  <footer class="footer page__footer">
+    <p class="footer__copyright">&copy;2022 Mesto Russia</p>
   </footer>
   <!-- /.footer -->
+
 </body>
 </html>
