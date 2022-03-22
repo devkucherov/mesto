@@ -8,3 +8,10 @@
 	cursor: pointer;
 	grid-area: edit-button;
 }
+
+@media (max-width: 680px) {
+	.edit-button {
+		width: 18px;
+		height: 18px;
+	}
+}
