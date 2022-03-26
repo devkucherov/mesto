@@ -1,0 +1,19 @@
+.pop-up__user-name {
+  width: 100%;
+  max-width: 358px;
+	min-height: 27px;
+  font-size: 14px;
+	box-sizing: border-box;
+  outline: none;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding-bottom: 9px;
+	margin: 50px auto 0;
+}
+
+@media (max-width: 580px) {
+	.pop-up__user-name {
+		max-width: 238px;
+		margin-top: 74px;
+	}
+}
