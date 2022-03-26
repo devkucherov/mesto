@@ -10,15 +10,26 @@ let formElement = document.querySelector('.pop-up__form'); // Воспользу
 let nameInput = document.querySelector('.pop-up__user-name'); // Воспользуйтесь инструментом .querySelector()
 let jobInput = document.querySelector('.pop-up__user-job'); // Воспользуйтесь инструментом .querySelector()
 
+// Вставляем в input окна значение поля имя из блока profile
+nameInput.value = userName.textContent;
+
+// Вставляем в input окна значение поля работы из блока profile
+jobInput.value = userJob.textContent;
+
+// Функция открытия окна
 function openPopup() {
 	popupElement.classList.remove('pop-up__open');
 }
 
+// Функция закрытия окна
 function closePopup() {
 	popupElement.classList.add('pop-up__open');
 }
 
+// Добавляем слушатель событий для кнопки редактировать профиль
 editButton.addEventListener('click', openPopup)
+
+// Добавляем слушатель событий для кнопки закрытия окна
 closeButton.addEventListener('click', closePopup)
 
 // Обработчик «отправки» формы, хотя пока
@@ -33,7 +44,10 @@ function formSubmitHandler (evt) {
     // Выберите элементы, куда должны быть вставлены значения полей
 
     // Вставьте новые значения с помощью textContent
+    userName.textContent = nameInput.value;
+    userJob.textContent = jobInput.value;
 
+    closePopup();
 }
 
 // Прикрепляем обработчик к форме:
