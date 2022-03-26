@@ -1,14 +1,14 @@
 let userName = document.querySelector('.profile__user-name'); // Находим поле имени в блоке profile
 let userJob = document.querySelector('.profile__user-job'); // Находим поле работы в блоке profile
 let editButton = document.querySelector('.edit-button'); // Находим кнопку редактирования данных в блоке profile
-let popupElement = document.querySelector('.pop-up'); // Находим само окно 
-let closeButton = document.querySelector('.pop-up__close-button'); // Нходим кнопку закрытия окна
+let popupElement = document.querySelector('.popup'); // Находим само окно 
+let closeButton = document.querySelector('.popup__close-button'); // Нходим кнопку закрытия окна
 
 // Находим форму в DOM
-let formElement = document.querySelector('.pop-up__form'); // Воспользуйтесь методом querySelector()
+let formElement = document.querySelector('.popup__form'); // Воспользуйтесь методом querySelector()
 // Находим поля формы в DOM
-let nameInput = document.querySelector('.pop-up__user-name'); // Воспользуйтесь инструментом .querySelector()
-let jobInput = document.querySelector('.pop-up__user-job'); // Воспользуйтесь инструментом .querySelector()
+let nameInput = document.querySelector('.popup__user-name'); // Воспользуйтесь инструментом .querySelector()
+let jobInput = document.querySelector('.popup__user-job'); // Воспользуйтесь инструментом .querySelector()
 
 // Вставляем в input окна значение поля имя из блока profile
 nameInput.value = userName.textContent;
@@ -18,12 +18,12 @@ jobInput.value = userJob.textContent;
 
 // Функция открытия окна
 function openPopup() {
-	popupElement.classList.remove('pop-up__open');
+	popupElement.classList.remove('popup_opened');
 }
 
 // Функция закрытия окна
 function closePopup() {
-	popupElement.classList.add('pop-up__open');
+	popupElement.classList.add('popup_opened');
 }
 
 // Добавляем слушатель событий для кнопки редактировать профиль
