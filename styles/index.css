@@ -40,9 +40,9 @@
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__user-name/popup__user-name.css);
-@import url(../blocks/popup/__user-job/popup__user-job.css);
-@import url(../blocks/popup/__user-job/popup__user-job.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_user-job/popup__input_user-job.css);
+@import url(../blocks/popup/__input/_user-name/popup__input_user-name.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);
 
 

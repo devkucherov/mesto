@@ -7,18 +7,14 @@ let closeButton = document.querySelector('.popup__close-button'); // Нходи�
 // Находим форму в DOM
 let formElement = document.querySelector('.popup__form'); // Воспользуйтесь методом querySelector()
 // Находим поля формы в DOM
-let nameInput = document.querySelector('.popup__user-name'); // Воспользуйтесь инструментом .querySelector()
-let jobInput = document.querySelector('.popup__user-job'); // Воспользуйтесь инструментом .querySelector()
-
-// Вставляем в input окна значение поля имя из блока profile
-nameInput.value = userName.textContent;
-
-// Вставляем в input окна значение поля работы из блока profile
-jobInput.value = userJob.textContent;
+let nameInput = document.querySelector('.popup__input_user-name'); // Воспользуйтесь инструментом .querySelector()
+let jobInput = document.querySelector('.popup__input_user-job'); // Воспользуйтесь инструментом .querySelector()
 
 // Функция открытия окна
 function openPopup() {
 	popupElement.classList.remove('popup_opened');
+    nameInput.value = userName.textContent; // Вставляем в input окна значение поля имя из блока profile
+    jobInput.value = userJob.textContent; // Вставляем в input окна значение поля работы из блока profile
 }
 
 // Функция закрытия окна

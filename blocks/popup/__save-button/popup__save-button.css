@@ -1,12 +1,12 @@
 .popup__save-button {
-  width: 358px;
+	width: 358px;
 	height: 50px;
-  color: #fff;
-  font-size: 18px;
-  line-height: 22px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
 	text-align: center;
 	text-decoration: none;
-  cursor: pointer;
+	cursor: pointer;
 	background-color: #000;
 	border: none;
 	border-radius: 2px;
