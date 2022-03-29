@@ -50,7 +50,7 @@
 			<img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="фото" class="element__photo">
 			<div class="element__text">
 				<h2 class="element__title">Гора Эльбрус</h2>
-				<button type="button" class="element__heart"></button>
+				<button type="button" class="element__heart element__heart_active"></button>
 			</div>
 		</article>
     <!-- /.element -->
@@ -100,20 +100,22 @@
   </footer>
   <!-- /.footer -->
 
-  <!-- .pop-up -->
+  <!-- .popup -->
   <div class="popup popup_opened">
 
 		<section class="popup__container">
 
-			<button type="button" class="popup__close-button"></button>
+			<button type="button" class="popup__close-button">
+				<img src="./images/close_icon.svg" alt="Закрыть окно" class="popup__close-button__icon">
+			</button>
 
 			<form name="editProfileForm" class="popup__form">
 
 				<h3 class="popup__title">Редактировать профиль</h3>
 
-				<input type="text" name="user-name" class="popup__input popup__input_user-name">
+				<input type="text" name="user-name" class="popup__input popup__input_type_name">
 
-				<input type="text" name="user-job" class="popup__input popup__input_user-job">
+				<input type="text" name="user-job" class="popup__input popup__input_type_job">
 
 				<button type="submit" class="popup__save-button">Сохранить</button>
 
@@ -122,7 +124,7 @@
 		</section>
 
 	</div>
-  <!-- /.pop-up -->
+  <!-- /.popup -->
 
   <script src="./script/script.js"></script>
 </body>

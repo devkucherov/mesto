@@ -7,8 +7,8 @@ let closeButton = document.querySelector('.popup__close-button'); // Нходи�
 // Находим форму в DOM
 let formElement = document.querySelector('.popup__form'); // Воспользуйтесь методом querySelector()
 // Находим поля формы в DOM
-let nameInput = document.querySelector('.popup__input_user-name'); // Воспользуйтесь инструментом .querySelector()
-let jobInput = document.querySelector('.popup__input_user-job'); // Воспользуйтесь инструментом .querySelector()
+let nameInput = document.querySelector('.popup__input_type_name'); // Воспользуйтесь инструментом .querySelector()
+let jobInput = document.querySelector('.popup__input_type_job'); // Воспользуйтесь инструментом .querySelector()
 
 // Функция открытия окна
 function openPopup() {
