@@ -1,39 +1,17 @@
 .profile {
-	display: grid;
-	max-width: 880px;
-	height: 120px;
-	grid-template-areas: 
-	"profile__avatar profile__user-name edit-button add-button"
-	"profile__avatar profile__user-job edit-button add-button";
-	grid-template-columns: 150px 312px 1fr 150px;
-	grid-template-rows: 72px 1fr;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 40px 0 50px 0;
+  box-sizing: border-box;
 }
 
-
-@media (max-width: 740px) {
-	.profile {
-		grid-template-areas: 
-		"profile__avatar profile__user-name edit-button"
-		"profile__avatar profile__user-job edit-button"
-		"add-button add-button add-button";
-		grid-template-columns: 150px 312px 1fr;
-		grid-template-rows: 90px 30px 70px;
-		max-width: 581px;
-		height: 190px;
-	}
-}
-
-
-@media (max-width: 680px) {
-	.profile {
-		width: 282px;
-		height: 286px;
-		grid-template-areas: 
-		"profile__avatar profile__avatar profile__avatar"
-		"null profile__user-name edit-button"
-		"profile__user-job profile__user-job profile__user-job"
-		"add-button add-button add-button";
-		grid-template-columns: 1fr 189px 1fr;
-		grid-template-rows: 140px 1fr 1fr 50px;
-	}
+@media screen and (max-width: 767px) {
+  .profile {
+    flex-direction: column;
+    padding: 42px 0 36px 0;
+  }
 }

@@ -1,0 +1,12 @@
+.elements__item-bottom {
+  display: flex;
+  width: 246px;
+  margin: 23px 15px 0px 21px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .elements__item-bottom {
+    margin-top: 21px;
+  }
+}

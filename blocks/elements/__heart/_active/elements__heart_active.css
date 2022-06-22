@@ -1,0 +1,8 @@
+.elements__heart_active {
+  background-image: url(../../../../image/heartBlack.svg);
+  min-width: 26px;
+  background-repeat: no-repeat;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+}

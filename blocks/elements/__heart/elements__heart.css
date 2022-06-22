@@ -1,0 +1,20 @@
+.elements__heart {
+  background-image: url(../../../image/heart.svg);
+  min-width: 26px;
+  background-repeat: no-repeat;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .elements__heart {
+    margin-top: 4px;
+    min-width: 28px;
+  }
+}
+
+.elements__heart:hover {
+  opacity: 50%;
+  cursor: pointer;
+}

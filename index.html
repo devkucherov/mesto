@@ -1,131 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Место</title>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Mesto</title>
 </head>
-<body class="page">
+
+<body class="body">
 
   <!-- .header -->
-  <header class="header page__header">
-    <img src="./images/logo.svg" alt="Логотип" class="logo header__logo">
+  <header class="header">
+    <img class="header__logo" src="image/logo.svg" alt="логотип место">
   </header>
   <!-- /.header -->
 
-  <!-- .profile -->
-  <section class="profile page__profile">
+  <!-- .main -->
+  <main class="main">
 
-    <img src="./images/avatar.jpg" alt="Фото профеля" class="profile__avatar">
+    <!-- .profile -->
+    <section class="profile">
+      <div class="profile__info">
+        <img class="profile__image" src="image/Avatar.png" alt="фото аватара">
+        <div class="profile__name">
+          <div class="profile__name-family">
+            <h1 class="profile__full-name">Жак-Ив Кусто</h1>
+            <button type="button" class="profile__edit-button" aria-label="редактировать"></button>
+          </div>
+          <p class="profile__profession">Исследователь океана</p>
+        </div>
+      </div>
+      <button type="button" class="profile__add-button" aria-label="добавить профиль"></button>
+    </section>
+    <!-- /.profile -->
 
-		<h1 class="profile__user-name">Жак-Ив Кусто</h1>
+    <!-- .elements -->
+    <section class="elements">
+    </section>
+    <!-- /.elements -->
 
-		<p class="profile__user-job">Исследователь океана</p>
+  </main>
+  <!-- /.main -->
 
-		<button type="button" class="edit-button profile__edit-button">
-			<img src="./images/icon-edit.svg" alt="Редактировать профиль" class="edit-button__icon">
-		</button>
-
-	  <button type="button" class="add-button profile__add-button">
-		  <img src="./images/icon-add.svg" alt="Добавить" class="add-button__icon">
-	  </button>
-
-  </section>
-  <!-- /.profile -->
-
-  <!-- .elements -->
-  <section class="elements page__elements">
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Карачаевск</h2>
-				<button type="button" class="element__heart"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Гора Эльбрус</h2>
-				<button type="button" class="element__heart element__heart_active"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Домбай</h2>
-				<button type="button" class="element__heart"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Гора Эльбрус</h2>
-				<button type="button" class="element__heart"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Домбай</h2>
-				<button type="button" class="element__heart"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-		<article class="element">
-			<img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="фото" class="element__photo">
-			<div class="element__text">
-				<h2 class="element__title">Карачаево-Черкессия</h2>
-				<button type="button" class="element__heart"></button>
-			</div>
-		</article>
-    <!-- /.element -->
-
-	</section>
-  <!-- /.elements -->
- 
   <!-- .footer -->
-  <footer class="footer page__footer">
-    <p class="footer__copyright">&copy;2022 Mesto Russia</p>
+  <footer class="footer">
+    <p class="footer__text">© 2022 Pasha Kucherov</p>
   </footer>
   <!-- /.footer -->
 
-  <!-- .popup -->
-  <div class="popup popup_opened">
+  <!-- .popup_profile -->
+  <div class="popup popup_type_profile">
+    <div class="popup__content">
+      <button type="button" class="popup__close-button popup__close-button_type_profile" aria-label="закрыть"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form" name="main">
+        <input type="text" class="popup__input_value_name popup__input" name="name">
+        <input type="text" class="popup__input_value_job popup__input" name="job">
+        <button type="submit" class="popup__save-button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <!-- /.popup_profile -->
 
-		<section class="popup__container">
+  <!-- .popup_new-place -->
+  <div class="popup popup_type_new-place">
+    <div class="popup__content">
+      <button type="button" class="popup__close-button popup__close-button_type_newplace" aria-label="закрыть"></button>
+      <h2 class="popup__title">Новое место</h2>
+      <form class="popup__form-newplace" name="main">
+        <input type="text" class="popup__input_value_place popup__input" name="place" placeholder="Название">
+        <input type="text" class="popup__input_value_src popup__input" name="link" placeholder="Ссылка на картинку">
+        <button type="submit" class="popup__save-button">Создать</button>
+      </form>
+    </div>
+  </div>
+  <!-- /.popup_new-place -->
 
-			<button type="button" class="popup__close-button">
-				<img src="./images/close_icon.svg" alt="Закрыть окно" class="popup__close-icon">
-			</button>
+  <!-- .popup_image -->
+  <div class="popup popup_type_image">
+    <div class="popup__image-content">
+      <button type="button" class="popup__close-button popup__close-button_image_close"></button>
+      <img class="popup__image-image" src="image/kirill-pershin-1088404-unsplash.jpg"
+        alt="фото не загрузилось, возможно не верная ссылка">
+      <p class="popup__image-text"></p>
+    </div>
+  </div>
+  <!-- /.popup_image -->
 
-			<form name="editProfileForm" class="popup__form">
+  
+  <template class="template">
+    <div class="elements__item">
+      <button type="button" class="elements__basket" aria-label="удалить"></button>
+      <img class="elements__image" src="image/kirill-pershin-1088404-unsplash.jpg"
+        alt="фото не загрузилось, возможно не верная ссылка">
+      <div class="elements__item-bottom">
+        <h2 class="elements__title">Темплейт</h2>
+        <button type="button" class="elements__heart" aria-label="нравится"></button>
+      </div>
+    </div>
+  </template>
+  
+  <script src="script/index.js"></script>
 
-				<h3 class="popup__title">Редактировать профиль</h3>
-
-				<input type="text" name="user-name" class="popup__input popup__input_type_name">
-
-				<input type="text" name="user-job" class="popup__input popup__input_type_job">
-
-				<button type="submit" class="popup__save-button">Сохранить</button>
-
-			</form>
-
-		</section>
-
-	</div>
-  <!-- /.popup -->
-
-  <script src="./script/script.js"></script>
 </body>
+
 </html>

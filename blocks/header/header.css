@@ -1,4 +1,18 @@
 .header {
-	max-width: 880px;
-	border-bottom: 1px solid rgba(84, 84, 84, 1);
+  background-color: #000000;
+  max-width: 880px;
+  min-height: 74px;
+  padding: 45px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  box-sizing: border-box;
+  border-bottom: rgb(84, 84, 84, 0.7) 1px solid;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 28px 0 0 27px;
+  }
 }
